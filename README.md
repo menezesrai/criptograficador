@@ -1,18 +1,9 @@
-## Getting Started
+## Criptograficador
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Após aprender um pouco mais sobre Java tentei construir um simples codificador/decodificador usando o que aprendi.
+O programa é bem simples porém funciona como esperado, utilizando a Cifra de César como parte principal do funcionamento.
 
-## Folder Structure
+## O que fazer a seguir
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Colocar a função de apenas decriptar uma frase;
+- Tentar implementar outras formas de criptografia.
