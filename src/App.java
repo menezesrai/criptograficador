@@ -5,6 +5,8 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         String continueOption;
 
+        // Parte do código que o preapra para encriptar e decriptar uma frase.
+
         do {
             System.out.println("Insira o texto a ser encriptado:");
             String text = scanner.nextLine();
@@ -20,11 +22,13 @@ public class App {
 
             System.out.println("Você quer encriptar outra frase? (sim/não)");
             continueOption = scanner.nextLine();
+
+        // função while para garantir que o usuário possa continuar encriptando frases depois de fazer a primeira.
         } while (continueOption.equalsIgnoreCase("sim"));
 
         scanner.close();
     }
-
+        // Função que encripta o texto.
     public static String encrypt(String text, int desvio) {
         StringBuilder result = new StringBuilder();
         for (char character : text.toCharArray()) {
@@ -37,6 +41,8 @@ public class App {
         }
         return result.toString();
     }
+
+    // Função que decripta o texto.
 
     public static String decrypt(String text, int desvio) {
         return encrypt(text, 26 - desvio);
